@@ -170,7 +170,41 @@ a {
 	-webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
+	display: block;
+	position: relative;
+	float: left;
+	text-decoration: none;
+ 	 transition-duration: 0.5s;
 }
+
+
+
+/*
+li {
+    
+    display: block;
+    float: left;
+    
+    position: relative;
+    text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .navbar-default .navbar-nav li a:hover {
   color: #00ACFF;
@@ -301,6 +335,66 @@ a {
   background-image: linear-gradient(to right top, #00acff, #00caff, #00e4f0, #00f6a0, #0cff00);
   color: #ffffff;
 }
+
+
+
+/*---------------------------------------
+   Overview1  section              
+-----------------------------------------*/
+#overview1 {
+  padding-top: 1rem;
+  padding-bottom: 20rem;
+  position: relative;
+}
+
+#overview1 img {
+  border: 4px solid #f9f9f9;
+  padding: 20px 20px 40px 20px;
+}
+
+/*block quote color */
+#overview1 blockquote {
+  background: #ffffff;
+  box-shadow: 0px 2px 8px 10px rgba(50, 50, 50, 0.04);
+  border-left: 8px solid #F5007E;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  position: absolute;
+  font-size: 20px;
+  top: 240px;
+  left: 80px;
+  padding: 62px 52px;
+}
+
+#overview1 .overview-detail {
+  position: relative;
+  top: 40px;
+}
+
+#overview1 .btn {
+  background: transparent;
+  border: 4px solid #26253a;
+  border-radius: 0px;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding: 14px 46px;
+  transition: all 0.4s ease-in-out;
+  margin-top: 32px;
+}
+
+#overview1 .btn:hover {
+  background-image: linear-gradient(to right top, #00acff, #00caff, #00e4f0, #00f6a0, #0cff00);
+  color: #ffffff;
+}
+
+
+
+
+
+
+
 
 
 
@@ -468,7 +562,7 @@ a {
 /* blog single page */
 
 #blog-header {
-    background: url('../images/blog-header-bg.jpg') 50% 0 repeat-y fixed;
+    background: url('../images/tutor.png') 50% 0 repeat-y fixed;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: bottom center;
@@ -483,6 +577,25 @@ a {
           align-items: center;
     height: 50vh;
 }
+
+#blog-header1 {
+    background: url('../images/pic2.jpg') 50% 0 repeat-y fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: bottom center;
+    color: #ffffff;
+    display: -webkit-box;
+    display: -webkit-flex;
+     display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+     -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+    height: 50vh;
+}
+
+
 
 #blog .recent-post h3 {
   padding-bottom: 8px;
@@ -631,12 +744,15 @@ a {
     Price section              
 -----------------------------------------*/
 #price {
-  background: url('../images/price-bg.jpg') 50% 0 repeat-y fixed;
+  background: url('../images/tutor.png') 50% 0 repeat-y fixed;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
     color: #ffffff;
 }
+
+
+
 
 #price .pricing__item {
   position: relative;
@@ -717,7 +833,7 @@ a {
 
 #price .pricing__item:hover .pricing__price {
   color: #fff;
-  background: #222;
+  background: linear-gradient(to right top, #00acff, #00caff, #00e4f0, #00f6a0, #0cff00)
 }
 
 #price .pricing__feature-list {
@@ -797,8 +913,8 @@ a {
 footer {
   background: #26253a;
   color: #ffffff;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
 }
 
 footer .col-md-5 {
@@ -857,7 +973,7 @@ footer .copyright-text {
 }
 
 .social-icon li a:hover {
-    background: #ffffff;
+    background: linear-gradient(to right top, #00acff, #00caff, #00e4f0, #00f6a0, #0cff00);
 }
 
 
@@ -1003,6 +1119,51 @@ footer .copyright-text {
     margin-top: 32px;
   }
 
+}
+
+
+
+/* .    
+
+extra part
+
+
+*/ 
+
+
+
+
+
+li:focus-within a {
+  outline: none;
+}
+
+
+
+ul li ul {
+  background: transparent;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+ 
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+   visibility: visible;
+   opacity: 1;
+   display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
 }
 
 
